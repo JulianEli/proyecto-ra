@@ -110,30 +110,36 @@
           animation="property: rotation; to: 0 360 0; loop: true; dur: 7000; easing: linear">
         </a-gltf-model>
 
-        <a-text
-          value="CIRCUITO ELECTRICO\nUn circuito conduce corriente\nentre fuente, conductor y carga."
+        <a-entity
           position="0 2.2 0"
-          align="center"
-          color="#ffffff"
-          scale="1.35 1.35 1.35"
-          font="https://cdn.aframe.io/fonts/Exo2Bold.fnt"
-          width="3.6"
-          wrap-count="22"
-          background="true"
-          background-color="#0a1628"
-          opacity="1">
-        </a-text>
-
-        <a-text
-          value="⚡ Voltaje · Corriente · Resistencia"
+          look-at="[camera]">
+          <a-text
+            value="CIRCUITO ELECTRICO\nUn circuito conduce corriente\nentre fuente, conductor y carga."
+            align="center"
+            color="#ffffff"
+            scale="1.35 1.35 1.35"
+            font="https://cdn.aframe.io/fonts/Exo2Bold.fnt"
+            width="3.6"
+            wrap-count="22"
+            background="true"
+            background-color="#0a1628"
+            opacity="1">
+          </a-text>
+        </a-entity>
+ 
+        <a-entity
           position="0 1.5 0"
-          align="center"
-          color="#22d3ee"
-          scale="0.95 0.95 0.95"
-          width="3.4"
-          wrap-count="30"
+          look-at="[camera]"
           animation="property: position; from: 0 1.5 0; to: 0 1.62 0; loop: true; dir: alternate; dur: 1800; easing: easeInOutSine">
-        </a-text>
+          <a-text
+            value="Voltaje · Corriente · Resistencia"
+            align="center"
+            color="#22d3ee"
+            scale="0.95 0.95 0.95"
+            width="3.4"
+            wrap-count="30">
+          </a-text>
+        </a-entity>
 
         <a-ring
           position="0 0.1 0"
